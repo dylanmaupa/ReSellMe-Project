@@ -2,14 +2,15 @@
 @import 'main';
 @import 'fonts';
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-family: 'Alvenier',sans-serif;
+  font-family: 'Avenir LT Std', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,6 +18,7 @@
   --sec-color: #fff;
   --acc-grey: #303846;
   --dark-blue: #011E55;
+  --acc-green: #018181;
 
   // color-scheme: light dark;
   color: var(--pri-color);
@@ -29,12 +31,33 @@
   -webkit-text-size-adjust: 100%;
 }
 
-li{
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-h1{
+
+.btn {
+  background: var(--dark-blue);
+  color: var(--sec-color);
+  padding: 10px 40px;
+  text-transform: uppercase;
   font-family: 'ceraProBlack';
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'ceraProBlack';
+  line-height: 1.2;
+}
+
+h2.sm {
+  font-family: 'ceraProBlack';
+  font-size: 32px;
+}
+
+section{
+  margin-top: 10rem;
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/images/resellme-logo.svg"
 import { ReactComponent as Sun } from "../assets/images/sun.svg"
 import { ReactComponent as Tabler } from "../assets/images/tabler_window.svg"
@@ -13,7 +13,7 @@ const NavBar = () => {
     <header>
         <div className="nav">
             <div className="logo">
-                <Logo className="logo-img" />
+              <Link to='/'><Logo className="logo-img" /></Link>
             </div>
             <ul>
                 <li><NavLink to="/">Docs</NavLink></li>

@@ -7,9 +7,13 @@ html {
 }
 
 header {
-    background: var(--acc-grey);
+    // background: var(--acc-grey);
     // width: 100%;
     display: flex;
+    position: absolute;
+    top: 10px;
+    z-index: 4;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
@@ -31,8 +35,11 @@ header {
 
         p {
             font-weight: 700;
+            font-size: 18px;
+            font-family: 'ceraProBlack';
         }
-        .lastP{
+
+        .lastP {
             display: none;
         }
 
@@ -84,13 +91,15 @@ header {
         }
 
         .hamburger.active {
-            p{
+            p {
                 display: none;
             }
-            .lastP{
+
+            .lastP {
                 display: block;
                 color: #f10;
             }
+
             .line {
                 background: #f10;
             }
@@ -133,21 +142,193 @@ header {
     }
 }
 
-.hero{
+// ************************************
+// ************* H E R O **************
+// ************************************
+
+.hero {
     position: relative;
     background: url(./assets/images/hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    .hero-inner{
+    .hero-inner {
         padding-block: 10rem;
         color: var(--sec-color);
-        background: #003F7498;
+        background: #004074d8;
 
-        h1{
+        h1 {
             font-size: 48px;
+            margin-bottom: 15px;
         }
+        .btnBox{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            // width: fit-content;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+
+            a:first-child{
+                background: var(--sec-color);
+                color: var(--pri-color);
+            }
+            a:last-child{
+                background: var(--acc-green);
+            }
+        }
+    }
+}
+
+.laptop-img{
+    position: absolute;
+    // top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: 15px;
+    bottom: -7rem;
+    img{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .overlay{
+        background: #00000029;
+        border-radius: 7px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        
+        .youtube{
+            position: absolute;
+            top: 50px;
+            right: 140px;
+            width: 15%;
+        }
+    }
+}
+
+// ************************************
+// ************* A B O U T **************
+// ************************************
+
+.about{
+    margin-top: 10rem;
+    img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .textBox{
+        margin-top: 10px;
+        p{
+            margin-inline: 20px;
+
+            span{
+                font-weight: 800;
+            }
+        }
+        .firstP{
+            margin-block: 10px;
+            // font-size: 20px;
+        }
+        .lastP{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// ************************************
+// ************* A B O U T **************
+// ************************************
+.get-start{
+    .wrapper{
+        margin-top: 10px;
+        padding-inline: 30px;
+
+        .card{
+            color: var(--sec-color);
+            background: var(--dark-blue);
+            margin-bottom: 20px;
+            padding: 20px 40px;
+            border-radius: 5px;
+
+            h3{
+                font-size: 30px;
+                font-family: 'ceraProBlack';
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero {
+        height: 80vh;
+        .hero-inner {
+            height: 100%;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+
+            h1{
+                font-size: 54px;
+                padding-inline: 25rem;
+                margin-bottom: 0;
+            }
+            p{
+                // padding-inline: 25rem;
+                font-size: 18px;
+            }
+            .btnBox{
+                flex-direction: row;
+            }
+        }
+    }
+    .laptop-img{
+        bottom: -20rem;
+        width: 70%;
+        .overlay{
+            .youtube{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 80px;
+        gap: 60px;
+        text-align: left;
+        margin-top: 40rem;
+        img{
+            width: 55%;
+        }
+        .textBox{
+            width: 100%;
+            margin-top: 0;
+
+            h2{
+                font-size: 56px;
+            }
+            p{
+                margin-inline: 0;
+                margin-block: 40px;
+                font-size: 22px;
+            }
+            .lastP{
+                margin-bottom: 40px;
+            }
+        }
+
     }
 }
 
