@@ -1,3 +1,7 @@
+import { ReactComponent as RegIcon } from "../src/assets/images/register-icon.svg"
+import { ReactComponent as ClientIcon } from "../src/assets/images/money-icon.svg"
+import { ReactComponent as MonIcon } from "../src/assets/images/find-client-icon.svg"
+
 const data = {
     Hero:[
         {
@@ -20,19 +24,49 @@ const data = {
                 {
                     id:1,
                     title:"Register",
-                    text:"To get started with buying domains for clients, all you need to do is create an account on our platform using your email, phone number & preferred payment method."
+                    text:"To get started with buying domains for clients, all you need to do is create an account on our platform using your email, phone number & preferred payment method.",
+                    num: 1,
+                    icon: RegIcon
                 },
                 {
                     id:2,
                     title:"Find Clients",
                     text:"Find a client who can be a business owner or a freelancer who wants a website but does not have a domain.",
-                    text2:"You take lead to buy the desired domain via ReSellMe for the client upfront."
+                    text2:"You take lead to buy the desired domain via ReSellMe for the client upfront.",
+                    num:2,
+                    "icon": ClientIcon
                 },
                 {
                     id:3,
                     title:"Get Paid",
                     text:"You only pay when you get a client to sell the service to. Your client pays for the service and you keep the profit.", 
-                    text2:"Our payment methods include Paypal, Visa, MasterCard, Bitcoin & Mukuru"
+                    text2:"Our payment methods include Paypal, Visa, MasterCard, Bitcoin & Mukuru",
+                    num:3,
+                    icon: MonIcon
+                }
+            ]
+        }
+    ],
+    Features:[
+        {
+            title:"Resellme’s Features",
+            text:"The Resellme platform has a wide range of features which make it stand out from all competitors. Here we have just a few of those.",
+            cards:[
+                {
+                    title:"Best Purchase Rates",
+                    text:"You might think, with the service type, we would charge a looot for domain purchase. But no, our domains are actually quite cheap as compared to our competitors"
+                },
+                {
+                    title:"Instant Payouts",
+                    text:"USD payout for every client you get to purchase a domain. We don’t ask you to get to 50 clients to get a payout, its 2022 after all, who has all the time right?"
+                },
+                {
+                    title:"No Monthly Commitments",
+                    text:"As long as you have an account, you only can use the platform when you get a client to sell the service to. Your client pays for the service and you keep the profit."
+                },
+                {
+                    title:"Business Automation",
+                    text:"Place your business on autopilot by making use of our plugins. Head over to our plugins & intergrations panel to get started"
                 }
             ]
         }
