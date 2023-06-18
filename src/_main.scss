@@ -162,7 +162,8 @@ header {
             font-size: 48px;
             margin-bottom: 15px;
         }
-        .btnBox{
+
+        .btnBox {
             margin-top: 20px;
             display: flex;
             flex-direction: column;
@@ -171,18 +172,19 @@ header {
             gap: 20px;
             align-items: center;
 
-            a:first-child{
+            a:first-child {
                 background: var(--sec-color);
                 color: var(--pri-color);
             }
-            a:last-child{
+
+            a:last-child {
                 background: var(--acc-green);
             }
         }
     }
 }
 
-.laptop-img{
+.laptop-img {
     position: absolute;
     // top: 0;
     left: 50%;
@@ -190,20 +192,22 @@ header {
     width: 90%;
     border-radius: 15px;
     bottom: -7rem;
-    img{
+
+    img {
         width: 100%;
         position: relative;
         overflow: hidden;
     }
-    .overlay{
+
+    .overlay {
         background: #00000029;
         border-radius: 7px;
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
-        
-        .youtube{
+
+        .youtube {
             position: absolute;
             top: 50px;
             right: 140px;
@@ -216,26 +220,31 @@ header {
 // ************* A B O U T **************
 // ************************************
 
-.about{
+.about {
     margin-top: 10rem;
-    img{
+
+    img {
         width: 90%;
         margin: 0 auto;
     }
-    .textBox{
+
+    .textBox {
         margin-top: 10px;
-        p{
+
+        p {
             margin-inline: 20px;
 
-            span{
+            span {
                 font-weight: 800;
             }
         }
-        .firstP{
+
+        .firstP {
             margin-block: 10px;
             // font-size: 20px;
         }
-        .lastP{
+
+        .lastP {
             margin-bottom: 20px;
         }
     }
@@ -245,13 +254,13 @@ header {
 // ************* G E T  S T A R T E D **************
 // *************************************************
 
-.get-start{
-    .wrapper{
+.get-start {
+    .wrapper {
         margin-top: 10px;
         padding-inline: 30px;
         margin-top: 50px;
 
-        .card{
+        .card {
             color: var(--sec-color);
             background: var(--dark-blue);
             margin-bottom: 60px;
@@ -259,15 +268,17 @@ header {
             position: relative;
             border-radius: 5px;
 
-            h3{
+            h3 {
                 font-size: 30px;
                 font-family: 'ceraProBlack';
                 margin-top: 20px;
             }
-            p:nth-child(2){
+
+            p:nth-child(2) {
                 margin-block: 20px;
             }
-            .number{
+
+            .number {
                 position: absolute;
                 font-family: 'ceraProBlack';
                 font-size: 30px;
@@ -281,15 +292,49 @@ header {
             }
         }
     }
-    a{
+
+    a {
         background: var(--pri-color);
         display: none;
+    }
+}
+
+// *************************************************
+// ************* F E A T U R E S **************
+// *************************************************
+.features {
+    padding-inline: 30px;
+
+    .heading {
+        margin-bottom: 30px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .card {
+        margin-bottom: 20px;
+
+        .icons {
+            .icon {
+                width: 25%;
+            }
+        }
+
+        .textBox {
+            h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
 @media screen and (min-width:1200px) {
     .hero {
         height: 80vh;
+
         .hero-inner {
             height: 100%;
             padding: 0;
@@ -299,32 +344,37 @@ header {
             gap: 20px;
             justify-content: center;
 
-            h1{
+            h1 {
                 font-size: 54px;
                 padding-inline: 25rem;
                 margin-bottom: 0;
             }
-            p{
+
+            p {
                 // padding-inline: 25rem;
                 font-size: 18px;
             }
-            .btnBox{
+
+            .btnBox {
                 flex-direction: row;
             }
         }
     }
-    .laptop-img{
+
+    .laptop-img {
         bottom: -20rem;
         width: 70%;
-        .overlay{
-            .youtube{
+
+        .overlay {
+            .youtube {
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
         }
     }
-    .about{
+
+    .about {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -332,48 +382,69 @@ header {
         gap: 60px;
         text-align: left;
         margin-top: 40rem;
-        img{
+
+        img {
             width: 55%;
         }
-        .textBox{
+
+        .textBox {
             width: 100%;
             margin-top: 0;
 
-            h2{
+            h2 {
                 font-size: 56px;
             }
-            p{
+
+            p {
                 margin-inline: 0;
                 margin-block: 40px;
                 font-size: 22px;
             }
-            .lastP{
+
+            .lastP {
                 margin-bottom: 40px;
             }
         }
 
     }
-    .get-start{
-        h2{
+
+    .get-start {
+        h2 {
             font-size: 56px !important;
         }
-        .wrapper{
+
+        .wrapper {
             display: flex;
             gap: 60px;
             padding-inline: 70px;
             margin-bottom: 50px;
 
-            .card{
+            .card {
                 width: 100%;
                 margin-bottom: 0;
             }
         }
-        a{
+
+        a {
             font-size: 24px;
             display: block;
             margin: 0 auto;
             padding: 15px 100px;
             width: fit-content;
+        }
+    }
+
+    .features {
+        display: flex;
+        text-align: left;
+        gap: 80px;
+        padding-inline: 70px;
+
+        .wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px;
         }
     }
 }

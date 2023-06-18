@@ -18,7 +18,7 @@ const GettingStarted = ({start}) => {
                     <div className="card">
                         <div className="img">
                             <img src={card.icon} alt="" />
-                            {card.icon}
+                            <card.icon/>
                         </div>
                         <div className="textBox">
                             <h3>{card.title}</h3>
