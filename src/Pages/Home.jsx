@@ -5,6 +5,7 @@ import LaptopView from '../components/LaptopView';
 import About from '../components/About';
 import GettingStarted from '../components/GettingStarted';
 import Features from '../components/Features';
+import UseCases from '../components/UseCases';
 
 const Home = () => {
   return (
@@ -35,6 +36,13 @@ const Home = () => {
         return(
           <>
             <Features feature={feature} />
+          </>
+        )
+      })}
+      {data.UseCases && data.UseCases.map(usecase => {
+        return(
+          <>
+            <UseCases usecase={usecase} />
           </>
         )
       })}

@@ -148,7 +148,7 @@ header {
 
 .hero {
     position: relative;
-    background: url(./assets/images/hero-bg.png);
+    background: url(./assets/images/hero-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,7 +191,7 @@ header {
     transform: translateX(-50%);
     width: 90%;
     border-radius: 15px;
-    bottom: -7rem;
+    bottom: -10rem;
 
     img {
         width: 100%;
@@ -221,7 +221,7 @@ header {
 // ************************************
 
 .about {
-    margin-top: 10rem;
+    margin-top: 15rem;
 
     img {
         width: 90%;
@@ -331,9 +331,48 @@ header {
     }
 }
 
+// *************************************************
+// ************* U S E  C A S E **************
+// *************************************************
+.usecases{
+    background: var(--acc-grey2);
+    padding: 60px 0px;
+    
+    .wrapper{
+        padding-inline: 30px;
+        text-align: left;
+        gap: 20px;
+        justify-content: space-between;
+        .card{
+            display: flex;
+            flex-direction: column;
+            // height: 300px;
+
+            .textBox{
+                margin-bottom: 30px;
+
+                h3{
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                }
+            }
+            .case-icon{
+                width: 20%;
+            }
+            a{
+                text-align: center;
+                background: var(--pri-color);
+            }
+        }
+        .swiperNav{
+            margin-top: 30px;
+        }
+    }
+}
+
 @media screen and (min-width:1200px) {
     .hero {
-        height: 80vh;
+        height: 90vh;
 
         .hero-inner {
             height: 100%;
@@ -362,7 +401,7 @@ header {
     }
 
     .laptop-img {
-        bottom: -20rem;
+        bottom: -25rem;
         width: 70%;
 
         .overlay {
@@ -439,12 +478,65 @@ header {
         text-align: left;
         gap: 80px;
         padding-inline: 70px;
+        h2{
+            font-size: 52px !important;
+        }
 
         .wrapper {
             width: 100%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             column-gap: 30px;
+        }
+    }
+    .usecases{
+        text-align: left;
+        padding: 80px 0px;
+        h2{
+            font-size: 52px !important;
+            margin-left: 80px;
+        }
+        .wrapper{
+            width: 90%;
+            margin: auto;
+            margin-top: 35px;
+
+            .card{
+                // min-width: 250px;
+                max-width: 350px;
+                margin-right: 20px;
+                height: 460px;
+                display: flex;
+                flex-direction: column;
+                // gap: 20px;
+                justify-content: space-between;
+
+                .case-icon{
+                    width: 23%;
+                }
+                .textBox{
+                    margin-bottom: 0;
+                    h3{
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                    }
+                }
+                a{
+                    text-align: center;
+                    background: var(--pri-color);
+                }
+            }
+            .swiperNav{
+                text-align: right;
+                margin-top: 20px;
+            }
+
+            .right,.left{
+                cursor: pointer;
+            }
+            .right{
+                margin-left: 10px;
+            }
         }
     }
 }

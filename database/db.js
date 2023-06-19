@@ -7,6 +7,12 @@ import { ReactComponent as Icon2 } from "../src/assets/images/instant-payouts-ic
 import { ReactComponent as Icon3 } from "../src/assets/images/no-monthly-icon.svg"
 import { ReactComponent as Icon4 } from "../src/assets/images/business-auto-icon.svg"
 
+import { ReactComponent as webdev } from "../src/assets/images/web-dev-icon.svg"
+import { ReactComponent as smhousing } from "../src/assets/images/small-housing-icon.svg"
+import { ReactComponent as registeries } from "../src/assets/images/company-registries.svg"
+import { ReactComponent as smdigital } from "../src/assets/images/small-digital-icon.svg"
+import { ReactComponent as other } from "../src/assets/images/other-icon.svg"
+
 const data = {
     Hero:[
         {
@@ -76,6 +82,38 @@ const data = {
                     icon: Icon4 ,
                     title:"Business Automation",
                     text:"Place your business on autopilot by making use of our plugins. Head over to our plugins & intergrations panel to get started"
+                }
+            ]
+        }
+    ],
+    UseCases:[
+        {
+            title:"Resellme's Use Cases",
+            cards:[
+                {
+                    icon: webdev,
+                    title:"Web Development Freelancers",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    icon: smhousing,
+                    title:"Small Housing & Domain Registration Companies",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    icon: registeries,
+                    title:"Company Registries",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    icon: smdigital,
+                    title:"Small Digital Agencies",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                },
+                {
+                    icon: other,
+                    title:"Other",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 }
             ]
         }

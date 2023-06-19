@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PC from '../assets/images/laptop.png';
+import PC from '../assets/images/laptop.webp';
 import { ReactComponent as YouTube } from "../assets/images/youtube-icon.svg"
 
 const LaptopView = () => {

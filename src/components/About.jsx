@@ -1,4 +1,4 @@
-import image from "../assets/images/girl-in-glasses.png"
+import image from "../assets/images/girl-in-glasses.webp"
 import Button from "./Button";
 
 const About = ({about}) => {
