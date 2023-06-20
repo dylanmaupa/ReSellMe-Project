@@ -6,6 +6,9 @@ import About from '../components/About';
 import GettingStarted from '../components/GettingStarted';
 import Features from '../components/Features';
 import UseCases from '../components/UseCases';
+import Testimonials from '../components/Testimonials';
+import FAQs from '../components/FAQs';
+import Partners from '../components/Partners';
 
 const Home = () => {
   return (
@@ -46,6 +49,21 @@ const Home = () => {
           </>
         )
       })}
+      {data.Testimomials && data.Testimomials.map(testimony => {
+        return(
+          <>
+            <Testimonials testimony={testimony} />
+          </>
+        )
+      })}
+      {data.FAQs && data.FAQs.map(faq => {
+        return(
+          <>
+            <FAQs faq={faq} />
+          </>
+        )
+      })}
+      <Partners/>
     </div>
   )
 }

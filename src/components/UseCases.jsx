@@ -1,6 +1,6 @@
 import Button from "./Button"
 import 'swiper/css';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 import {Swiper, SwiperSlide} from 'swiper/react'
 import SwiperNavButtons from "./SwiperNavButtons";
 

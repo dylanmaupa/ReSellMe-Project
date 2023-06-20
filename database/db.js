@@ -13,6 +13,12 @@ import { ReactComponent as registeries } from "../src/assets/images/company-regi
 import { ReactComponent as smdigital } from "../src/assets/images/small-digital-icon.svg"
 import { ReactComponent as other } from "../src/assets/images/other-icon.svg"
 
+import girlInGlasses from "../src/assets/images/girl-in-glasses-small.webp"
+import man from "../src/assets/images/volunteer-tshirt.webp"
+import green from "../src/assets/images/man-in-green-tshirt.webp"
+import volunteer from "../src/assets/images/vol-orange.webp"
+import { ReactComponent as quotes } from "../src/assets/images/quotes.svg"
+
 const data = {
     Hero:[
         {
@@ -117,7 +123,74 @@ const data = {
                 }
             ]
         }
-    ]
+    ],
+    Testimomials:[
+        {
+            title:"Client Testimonials",
+            text:"We value client feedback to help keep making revisions to our product to give more value to you the end user. These are some of the awesome reviews we got from some of our clients.",
+            cards:[
+                {
+                    title:"Jane Doe",
+                    text1:"Company Name",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    image:girlInGlasses,
+                    quotes: quotes
+                },
+                {
+                    title:"John Doe",
+                    text1:"Company Name",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    image: man,
+                    quotes: quotes
+                },
+                {
+                    title:"John Doe",
+                    text1:"Company Name",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    image: green,
+                    quotes: quotes
+                },
+                {
+                    title:"Jane Doe",
+                    text1:"Company Name",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    image: volunteer,
+                    quotes: quotes
+                }
+            ]
+        }
+    ],
+    FAQs:[
+        {
+            title:"Frequently Asked Questions",
+            text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            text2:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            cards:[
+                {
+                    id:1,
+                    title:"What Do I Need To Get Started?",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                },
+                {
+                    id:2,
+                    title:"How Do I Get Paid After Referring A Client?",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                },
+                {
+                    title:"How many People can i refer in a day?",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                },
+                {
+                    title:"Do I need a visa card to get paid?",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                },
+                {
+                    title:"Can i refer people to resellme for commission?",
+                    text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                }
+            ]
+        }
+    ],
 }
 
 export default data

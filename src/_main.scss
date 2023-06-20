@@ -367,6 +367,112 @@ header {
         .swiperNav{
             margin-top: 30px;
         }
+        .right{
+            margin-left: 10px;
+        }
+    }
+}
+
+// *************************************************
+// ************* T E S T I M O N I A L S **************
+// *************************************************
+
+.testimonials{
+    background: var(--dark-blue);
+    margin-top: 0;
+    padding: 5rem 20px;
+    color: var(--sec-color);
+
+    .heading{
+        margin-bottom: 40px;
+    }
+    .wrapper{
+        .card{
+            background: var(--pri-color);
+            text-align: left;
+            margin-bottom: 30px;
+            .img{
+                width: 100%;
+                // position: relative;
+                
+                img{
+                    width: 100%;
+                }
+            }
+            .textBox{
+                padding: 20px 40px;
+                h3{
+                    font-size: 26px;
+                    margin-bottom: 5px;
+                }
+                h4{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+// *************************************************
+// ************* F A Q s **************
+// *************************************************
+
+.FAQs{
+    margin-top: 5rem;
+    padding-inline: 5px;
+    .heading{
+        margin-bottom: 30px;
+
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    .wrapper{
+        text-align: left;
+        padding-inline: 10px;
+
+        .card{
+            margin-block: 10px;
+            h3{
+                padding: 15px 10px;
+                border-radius: 4px;
+                background: var(--pri-color);
+                color: var(--sec-color);
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            p{
+                padding-inline: 10px;
+                // display: none;
+                transition: all .2s cubic-bezier(0,1,0,1);
+                max-height: 0px;
+                overflow: hidden;
+            }
+        }
+        .card.active{
+            p{
+                max-height: 999px;
+                height: auto;
+                transition: all .2s cubic-bezier(1,0,1,0);
+                // display: block;
+            }
+        }
+    }
+}
+
+// *************************************************
+// ************* P A R T N E R S **************
+// *************************************************
+.partners{
+    padding-inline: 30px;
+
+    .wrapper{
+        .card{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -536,6 +642,62 @@ header {
             }
             .right{
                 margin-left: 10px;
+            }
+        }
+    }
+    .testimonials{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        // gap: 40px;
+        .heading{
+            width: 100%;
+            padding-inline: 60px;
+            position: relative;
+            h2{
+                font-size: 56px;
+            }
+        }
+        .wrapper{
+            width: 100%;
+
+            .card{
+                max-width: 350px;
+                margin-right: 20px;
+                height: 460px;
+            }
+            .navLink{
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .FAQs{
+        display: flex;
+        padding: 5rem 50px;
+        gap: 60px;
+        .heading, .wrapper{
+            width: 100%;
+            text-align: left;
+        }
+        .heading{
+            p:last-child{
+                margin-top: 30px;
+            }
+        }
+        .wrapper{
+            .card{
+                margin-block: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .partners{
+        .wrapper{
+            .card{
+                max-width: 350px;
+                margin-right: 20px;
             }
         }
     }
