@@ -191,6 +191,12 @@ const data = {
             ]
         }
     ],
+    SignUp:[
+        {
+            title:"You Don’t Need Any Credit To Get Started",
+            text:"Resellme allows you to buy and sell domains keeping the profits, all in under 5 minutes."
+        }
+    ]
 }
 
 export default data

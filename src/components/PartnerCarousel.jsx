@@ -17,7 +17,7 @@ const PartnerCarousel = () => {
     <Swiper 
     className='wrapper'
     slidesPerView='auto'
-    spaceBetween={50}
+    spaceBetween={30}
     >
         {images && images.map(image => {
             return(

@@ -9,6 +9,8 @@ import UseCases from '../components/UseCases';
 import Testimonials from '../components/Testimonials';
 import FAQs from '../components/FAQs';
 import Partners from '../components/Partners';
+import FeaturedIn from '../components/FeaturedIn';
+import SignUp from '../components/SignUp';
 
 const Home = () => {
   return (
@@ -61,6 +63,12 @@ const Home = () => {
           <>
             <FAQs faq={faq} />
           </>
+        )
+      })}
+      <FeaturedIn/>
+      {data.SignUp && data.SignUp.map(sign => {
+        return(
+          <SignUp sign={sign} />
         )
       })}
       <Partners/>
