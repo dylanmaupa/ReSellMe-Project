@@ -200,7 +200,7 @@ header {
     transform: translateX(-50%);
     width: 90%;
     border-radius: 15px;
-    bottom: -10rem;
+    bottom: 0px;
 
     img {
         width: 100%;
@@ -866,6 +866,15 @@ footer{
     }
 }
 
+// @media screen and (min-width:765px) {
+//     .laptop-img{
+//         bottom: 160px;
+//         img{
+//             width: 80%;
+//         }
+//     }
+// }
+
 @media screen and (max-width:500px) {
     header {
         padding: 0 15px 0 0;
@@ -873,5 +882,10 @@ footer{
         .logo {
             width: 70%;
         }
+    }
+}
+@media screen and (max-width:380px) {
+    .laptop-img{
+        bottom: -150px;
     }
 }

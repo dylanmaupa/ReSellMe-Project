@@ -7,7 +7,7 @@ const LaptopView = () => {
         <div className='laptop-img'>
             <img src={PC} alt="" />
             <div className="overlay">
-              <Link to="https://www.youtube.com/" target="_blank"><YouTube className="youtube" /></Link>
+              {/* <Link to="https://www.youtube.com/" target="_blank"><YouTube className="youtube" /></Link> */}
             </div>
         </div>
     );
