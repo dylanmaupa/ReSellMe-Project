@@ -11,32 +11,34 @@ const NavBar = () => {
 
     return (
         <header>
-            <div className="nav">
-                <div className="logo">
-                    <Link to='/'><Logo className="logo-img" /></Link>
+            <div className="logo">
+                <Link to='/'><Logo className="logo-img" /></Link>
+            </div>
+            <nav className={active ? "navActive" : "navBar"}>
+                <div className="nav">
+                    <ul>
+                        <li><NavLink onClick={() => {setActive(!active)}} to="/">Docs</NavLink></li>
+                        <li><NavLink onClick={() => {setActive(!active)}} to="/">Blog</NavLink></li>
+                        <li><NavLink onClick={() => {setActive(!active)}} to="/">About Us</NavLink></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><NavLink to="/">Docs</NavLink></li>
-                    <li><NavLink to="/">Blog</NavLink></li>
-                    <li><NavLink to="/">About Us</NavLink></li>
-                </ul>
-            </div>
-            <div className="nav2">
-                <ul>
-                    <li>
-                        <NavLink to="/">Support<Tabler className="tabler" /></NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Portal<Tabler className="tabler" /></NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Register<Tabler className="tabler" /></NavLink>
-                    </li>
-                    {/* <li><Sun onClick={toggleTheme} /></li> */}
-                    <DarkMode/>
-                    <li><input type="search" placeholder="Search" /></li>
-                </ul>
-            </div>
+                <div className="nav2">
+                    <ul>
+                        <li>
+                            <NavLink onClick={() => {setActive(!active)}} to="/">Support<Tabler className="tabler" /></NavLink>
+                        </li>
+                        <li>
+                            <NavLink onClick={() => {setActive(!active)}} to="/">Portal<Tabler className="tabler" /></NavLink>
+                        </li>
+                        <li>
+                            <NavLink onClick={() => {setActive(!active)}} to="/">Register<Tabler className="tabler" /></NavLink>
+                        </li>
+                        {/* <li><Sun onClick={toggleTheme} /></li> */}
+                        <DarkMode onClick={() => {setActive(!active)}} />
+                        <li><input type="search" placeholder="Search" /></li>
+                    </ul>
+                </div>
+            </nav>
             <div onClick={() => { setActive(!active); }} className={active ? "hamburger active" : "hamburger"}>
                 <p>Menu</p>
                 <p className="lastP">Close</p>

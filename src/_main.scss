@@ -23,6 +23,10 @@ header {
             width: 80%;
         }
     }
+    nav{
+        display: flex;
+        gap: 250px;
+    }
 
 
     .hamburger {
@@ -129,14 +133,45 @@ header {
                 animation: rotate .4s linear;
             }
         }
-
-        .nav2 {
-            display: none;
+        .navBar{
+            // display: none;
+            width: 0;
+            opacity: 0;
+            z-index: -1;
+            overflow: hidden;
+            height: 0;
+            transition: 0s cubic-bezier(1,0,1,0);
+            
         }
 
-        .nav {
-            ul {
-                display: none;
+        .navActive{
+            position: absolute;
+            transition: .1s cubic-bezier(0,1,0,1);
+            padding-block: 40px;
+            // height: 999px;
+            width: 100%;
+            // text-align: center;
+            // justify-content: center;
+            align-items: center;
+            top: 70px;
+            display: block;
+            z-index: 99;
+            background: var(--sec-color);
+            .nav,.nav2{
+                display: block;
+                ul{
+                    flex-direction: column;
+                    a{
+                        font-size: 20px;
+                        color: var(--pri-color);
+                    }
+                    .dark_mode{
+                        margin-left: 0;
+                    }
+                }
+            }
+            .nav2{
+                margin-top: 20px;
             }
         }
     }
@@ -276,6 +311,9 @@ header {
             color: var(--sec-color);
             background: var(--dark-blue);
             margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             padding: 20px;
             position: relative;
             border-radius: 5px;
@@ -494,6 +532,7 @@ header {
     padding-inline: 30px;
 
     .wrapper {
+        margin-top: 40px;
         .card {
             width: 100%;
             box-shadow: 0px 0px 10px #ccc;
@@ -740,6 +779,10 @@ footer{
                     text-align: center;
                     background: var(--pri-color);
                 }
+                a:hover{
+                    background-color: var(--sec-color);
+                    color: var(--pri-color);
+                  }
             }
 
             .swiperNav {
@@ -803,6 +846,9 @@ footer{
         }
 
         .heading {
+            h2{
+                font-size: 42px;
+            }
             p:last-child {
                 margin-top: 30px;
             }
@@ -880,7 +926,7 @@ footer{
         padding: 0 15px 0 0;
 
         .logo {
-            width: 70%;
+            width: 60%;
         }
     }
 }

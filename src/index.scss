@@ -17,6 +17,33 @@
   section, .hero-inner,footer,.nav a,.nav2 a{
     color: var(--pri-color);
   }
+  .hero-inner{
+    .btnBox{
+      a:first-child{
+        background: #011E55;
+      }
+      a:first-child:hover{
+        background: var(--pri-color);
+      }
+      a:last-child{
+        background: #018181;
+        color: #F8F8F8;
+      }
+      a:last-child:hover{
+        color: #018181;
+        background: var(--pri-color);
+      }
+    }
+  }
+  .about{
+    a{
+      background: var(--pri-color);
+    }
+    a:hover{
+      background-color: var(--dark-blue);
+      color: var(--pri-color);
+    }
+  }
   .testimonials{
     .wrapper{
       .card{
@@ -25,6 +52,10 @@
     }
   }
   .get-start{
+    a:hover{
+      background-color: var(--dark-blue);
+      color: var(--pri-color);
+    }
     .wrapper{
       .card{
         color: var(--pri-color);
