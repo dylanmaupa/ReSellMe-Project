@@ -6,6 +6,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .3s ease-in-out;
+}
+
+[data-theme="dark"]{
+  --pri-color: #f8f8f8;
+  --sec-color: #01102c;
+  --dark-blue: #011E55;
+  background: var(--sec-color);
+  section, .hero-inner,footer,.nav a,.nav2 a{
+    color: var(--pri-color);
+  }
+  .testimonials{
+    .wrapper{
+      .card{
+        color: var(--sec-color);
+      }
+    }
+  }
+  .get-start{
+    .wrapper{
+      .card{
+        color: var(--pri-color);
+        .number{
+          color: var(--dark-blue);
+        }
+      }
+    }
+  }
+  .usecases{
+    background: var(--sec-color);
+  }
+  .part-carousel{
+    .card{
+      background: var(--pri-color);
+
+    }
+  }
+  .signup{
+    .wrapper{
+      color: var(--pri-color);
+    }
+  }
+  color: var(--pri-color);
 }
 
 :root {
