@@ -15,6 +15,7 @@
   --sec-color: #01102c;
   --dark-blue: #011E55;
   background: var(--sec-color);
+  // color-scheme: dark;
   section, .hero-inner,footer,.nav a,.nav2 a{
     color: var(--pri-color);
   }
@@ -104,7 +105,7 @@
   --dark-blue: #011E55;
   --acc-green: #018181;
 
-  color-scheme: light dark;
+  // color-scheme: light;
   color: var(--pri-color);
   // background-color: #242424;
 
