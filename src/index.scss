@@ -10,6 +10,7 @@
 }
 
 [data-theme="dark"]{
+  --menu-color: #01102c;
   --pri-color: #f8f8f8;
   --sec-color: #01102c;
   --dark-blue: #011E55;
@@ -77,6 +78,13 @@
   .signup{
     .wrapper{
       color: var(--pri-color);
+      a{
+        background: var(--pri-color);
+      }
+      a:hover{
+        background-color: var(--dark-blue);
+        color: var(--pri-color);
+      }
     }
   }
   color: var(--pri-color);
@@ -91,11 +99,12 @@
   --pri-color: #003F74;
   --sec-color: #fff;
   --acc-grey2: #F8F8F8;
+  --menu-color: #d1cfcf;
   --acc-grey: #303846;
   --dark-blue: #011E55;
   --acc-green: #018181;
 
-  // color-scheme: light dark;
+  color-scheme: light dark;
   color: var(--pri-color);
   // background-color: #242424;
 
